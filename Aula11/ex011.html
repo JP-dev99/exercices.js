@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é o rei de Mônaco?</title>
+</head>
+
+<body>
+    <h1>Rei de Mônaco</h1>
+    Para saber de se você é o <strong>REI DE MÔNACO</strong> coloque o seu nome completo abaixo:
+    <p><input type="text" name="nome1" id="nome1"></p>
+    <input type="button" value="Eu sou?" onclick="clicar()">
+    <div id="res">
+    </div>
+    <script>
+        function clicar() {
+            var nome = window.document.getElementById('nome1')
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>Hello</p>`
+            var piloto = String(nome.value)
+            if (piloto == 'Moisés') {
+                res.innerHTML = `Cara*** não é que é tu mesmo, imagina quando tiver o <strong>G29</strong>, tá maluco!`
+            } else (
+                res.innerHTML = 'Não é vc man, tente novamente quando o seu nome for o nome do champs...'
+            )
+
+        }
+
+    </script>
+</body>
+
+</html>
